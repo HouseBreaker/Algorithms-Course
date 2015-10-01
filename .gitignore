@@ -194,3 +194,10 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# SVN Folder, exams and shortcuts
+SVN/
+Exams/
+*.lnk
+HW Uploads/
+6. Advanced-CSharp-Streams-and-Files-Demos/
