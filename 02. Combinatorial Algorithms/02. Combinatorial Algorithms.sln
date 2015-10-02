@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Permutations", "01. Per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Permutations (iterative)", "02. Permutations (iterative)\02. Permutations (iterative).csproj", "{EA0FAE87-6018-468A-A808-73B827EE38B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Combinations (iterative)", "03. Combinations (iterative)\03. Combinations (iterative).csproj", "{6DD2054D-5921-4BE5-80E8-332BB6950B8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EA0FAE87-6018-468A-A808-73B827EE38B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA0FAE87-6018-468A-A808-73B827EE38B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA0FAE87-6018-468A-A808-73B827EE38B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD2054D-5921-4BE5-80E8-332BB6950B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD2054D-5921-4BE5-80E8-332BB6950B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD2054D-5921-4BE5-80E8-332BB6950B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD2054D-5921-4BE5-80E8-332BB6950B8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
