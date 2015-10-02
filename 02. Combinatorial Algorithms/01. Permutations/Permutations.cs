@@ -5,51 +5,48 @@ namespace _02.Combinatorial_Algorithms
 {
 	class Permutations
 	{
-		static int count;
+
+		static int countOfPermutations;
 		static int[] arr;
 		static void Main()
 		{
-			int n = 4;
-			arr = Enumerable.Range(1, n).ToArray();
+			Console.Write("n = ");
+			int n = int.Parse(Console.ReadLine());
 
-			GeneratePermutations(n);
+			arr = Enumerable.Range(1, n).ToArray();
+			Permute(0);
+
+			Console.WriteLine($"Total permutations: {countOfPermutations}");
 		}
 
-		static void GeneratePermutations(int n)
+		static void Permute(int index)
 		{
-			if (n == 1)
+			if (index >= arr.Length - 1)
 			{
-				Print(arr);
+				Console.WriteLine(string.Join(" ", arr));
+				countOfPermutations++;
 			}
 			else
 			{
-				for (int i = 0; i < n-1; i++)
+				for (int i = index; i < arr.Length; i++)
 				{
-					GeneratePermutations(n-1);
-
-					if (n%2 == 0) //if even, swap values of arr[n-1] and arr[i]
-					{
-						Swap(arr[i], arr[n-1]);
-					}
-					else		  //if odd, swap values of the first element of arr and n-1
-					{
-						Swap(arr[0], arr[n - 1]);
-					}
+					Swap(ref arr[index], ref arr[i]);
+					Permute(index + 1);
+					Swap(ref arr[i], ref arr[index]);
 				}
-				GeneratePermutations(n - 1);
-            }
+			}
 		}
 
-		private static void Swap(int i1, int i2)
+		static void Swap(ref int i, ref int j)
 		{
-			arr[i1] ^= arr[i2];
-			arr[i2] ^= arr[i1];
-			arr[i1] ^= arr[i2];
-		}
+			if (i == j)
+			{
+				return;
+			}
 
-		static void Print(int[] arr)
-		{
-			Console.WriteLine(string.Join(" ", arr));
+			i ^= j;
+			j ^= i;
+			i ^= j;
 		}
 	}
 }
