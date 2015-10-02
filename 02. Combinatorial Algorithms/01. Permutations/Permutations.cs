@@ -32,7 +32,7 @@ namespace _02.Combinatorial_Algorithms
 				{
 					Swap(ref arr[index], ref arr[i]);
 					Permute(index + 1);
-					Swap(ref arr[i], ref arr[index]);
+					Swap(ref arr[index], ref arr[i]);
 				}
 			}
 		}
