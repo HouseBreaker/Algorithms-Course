@@ -6,7 +6,7 @@ namespace _02.Permutations__iterative_
 	class IterativePermutations
 	{
 		static int countOfPermutations = 1;
-		static int[] arr, manipulateArr;
+		static int[] arr, manipulatedArr;
 
 		static void Main()
 		{
@@ -14,7 +14,7 @@ namespace _02.Permutations__iterative_
 			int n = int.Parse(Console.ReadLine());
 
 			arr = Enumerable.Range(1, n).ToArray();
-			manipulateArr = Enumerable.Range(0, n + 1).ToArray();
+			manipulatedArr = Enumerable.Range(0, n + 1).ToArray();
 
 			Console.WriteLine(string.Join(" ", arr));
 
@@ -22,16 +22,16 @@ namespace _02.Permutations__iterative_
 
 			while (i < n)
 			{
-				manipulateArr[i]--;
+				manipulatedArr[i]--;
 				
-				j = i%2 == 1 ? manipulateArr[i] : 0;
+				j = i%2 == 1 ? manipulatedArr[i] : 0;
 				Swap(ref arr[j], ref arr[i]);
 				i = 1;
 
-				while (manipulateArr[i] == 0)
+				while (manipulatedArr[i] == 0)
 				{
 
-					manipulateArr[i] = i;
+					manipulatedArr[i] = i;
 					i++;
 				}
 

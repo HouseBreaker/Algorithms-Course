@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace _03.Combinations__iterative_
 {
@@ -7,7 +6,7 @@ namespace _03.Combinations__iterative_
 	{
 		static void Main()
 		{
-			
+			//todo
 		}
 	}
 }
