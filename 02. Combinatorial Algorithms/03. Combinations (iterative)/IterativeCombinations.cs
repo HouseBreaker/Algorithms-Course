@@ -6,7 +6,7 @@ namespace _03.Combinations__iterative_
 	{
 		static void Main()
 		{
-			//todo
+			// couldn't find a way to do this problem
 		}
 	}
 }
